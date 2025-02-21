@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/container.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="cart">
+        <header class="header">
+            <div class="header-nav">
+                <a href="" class="header-nav-icon-link">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>0335764028</span>
+                </a>
+                <div class="social-icons">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+                <ul class="header-nav-links">
+                    <li>
+                        <i class="fa fa-angle-right"></i><a href="#">My Account</a>
+                    </li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">FAQ</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">Contact Us</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">Newsletter Signup</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">Shipping Terms</a></li>
+                </ul>
+                <button class="wishlist-btn">My Wishlist</button>
+
+            </div>
+            <div class="header-main">
+                <div class="logo">THEGEM</div>
+                <nav class="nav-menu">
+                    <a href="#">HOME</a>
+                    <a href="#">PAGES</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">PORTFOLIOS</a>
+                    <a href="#" class="shop-btn">SHOP</a>
+                    <a href="#">FEATURES</a>
+                    <a href="#">ELEMENTS</a>
+                </nav>
+                <div class="cart-icon">
+                    <img src="./assets/img/co-quoc-gia-anh.webp" alt="#" class="img-england">
+                    <i class="fa fa-search cart-icon--search"></i>
+                    <i class="fa-solid fa-basket-shopping "></i>
+                    <span class="cart-badge">2</span>
+                </div>
+            </div>
+            <div class="cart-tablet">
+                <div class="cart-tablet-left">
+
+                    <div class="cart-title">
+                        <span class="cart-title--hilight " style="margin-right: 10px;">WOO</span>
+                        <span> CART</span>
+                    </div>
+                    <div class="cart-breadcrum">
+                        <span class="text-primary">Home</span>
+                        <i class="fa-solid fa-arrow-right " style="color: #697b87;"></i>
+                        <span class="text-primary">Breadcrums Example</span>
+                        <i class="fa-solid fa-arrow-right " style="color: #697b87;"></i>
+                        <span class="text-primary">second Leave</span>
+                        <i class="fa-solid fa-arrow-right " style="color: #697b87;"></i>
+                        <span class="text-primary">Third level</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart-icon-tablet"></i>
+            </div>
+        </header>
+        <div class="cart-container">
+            <div class="cart-products-total">
+                You Have <span style="color:#00c8ff ;">6 Items</span> In Your Cart
+            </div>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th><span style="margin-left: 34px;">PRODUCT</span></th>
+                        <th>PRICE</th>
+                        <th>QUANTITY</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <div class="product-image"></div>
+                            <span>Lorem ipsum dolor sit amet</span>
+                        </td>
+                        <td>$35.99</td>
+                        <td class="quantity">
+                            <button class="qty-btn"><i class="fa-solid fa-minus"></i></button>
+                            <span class="quantity-number">1</span>
+                            <button class="qty-btn"><i class="fa-solid fa-plus"></i>
+                            </button>
+                        </td>
+                        <td>$35.99</td>
+                    </tr>
+                    <tr class="cart-product-alt">
+                        <td class="product">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <div class="product-image"></div>
+                            <span>Consectetur adipiscing</span>
+                        </td>
+                        <td>$1285.99</td>
+                        <td class="quantity">
+                            <button class="qty-btn"><i class="fa-solid fa-minus"></i></button>
+                            <span class="quantity-number">1</span>
+                            <button class="qty-btn"><i class="fa-solid fa-plus"></i>
+                            </button>
+                        </td>
+                        <td>$1285.99</td>
+                    </tr>
+                    <tr>
+                        <td class="product">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <div class="product-image"></div>
+                            <span>Elit sed do eiusmod</span>
+                        </td>
+                        <td>$89.99</td>
+                        <td class="quantity">
+                            <button class="qty-btn"><i class="fa-solid fa-minus"></i></button>
+                            <span class="quantity-number">1</span>
+                            <button class="qty-btn"><i class="fa-solid fa-plus"></i>
+                            </button>
+                        </td>
+                        <td>$89.99</td>
+                    </tr>
+                    <tr class="cart-product-alt">
+                        <td class="product">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <div class="product-image"></div>
+                            <span>Tempor incididunt ut labore</span>
+                        </td>
+                        <td>$12.00</td>
+                        <td class="quantity">
+                            <button class="qty-btn"><i class="fa-solid fa-minus"></i></button>
+                            <span class="quantity-number">1</span>
+                            <button class="qty-btn"><i class="fa-solid fa-plus"></i>
+                            </button>
+                        </td>
+                        <td>$12.00</td>
+                    </tr>
+                    <tr>
+                        <td class="product">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <div class="product-image"></div>
+                            <span>Et dolore magna aliqua</span>
+                        </td>
+                        <td>$158.25</td>
+                        <td class="quantity">
+                            <button class="qty-btn"><i class="fa-solid fa-minus"></i></button>
+                            <span class="quantity-number">1</span>
+                            <button class="qty-btn"><i class="fa-solid fa-plus"></i>
+                            </button>
+                        </td>
+                        <td>$158.25</td>
+                    </tr>
+                    <tr> </tr>
+                </tbody>
+            </table>
+            <div class="cart-list-footer">
+                <div class="coupon-container">
+                    <input class="coupon-input" type="text" placeholder="Enter coupon code ....">
+                    <button class="btn btn-apply">Apply</button>
+                </div>
+                <div class="action-cart">
+                    <button class="btn button-update-cart">UPDATE CART</button>
+                    <button class="btn button-update-checkout"><i
+                            class="fa-regular fa-circle-check"></i>CHECKOUT</button>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <div class="shipping-caculate">
+                    <div class="shipping-caculate-title">
+                        CALCULATE SHIPPING
+                    </div>
+                    <form class="infor-shipping">
+                        <select class="infor-country" type="text">
+                            <option value="volvo">Ha Noi</option>
+                            <option value="saab">HCM</option>
+                            <option value="opel">Nghe An</option>
+                        </select>
+                        <div style="display: flex; justify-content: space-between;">
+                            <input class="input" type="text" placeholder="State/Country"
+                                style="width: 48%; height: 30px;">
+                            <input class="input" type="text" placeholder="Post code/Zip"
+                                style="width: 48%; height: 30px;">
+                        </div>
+                        <button class="btn btn-update-totals">UDPATE TOTALS</button>
+
+                    </form>
+
+                </div>
+                <div class="cart-totals">
+                    <div class="cart-totals__title">CART TOTALS</div>
+                    <table class="cart-totals__table">
+                        <tr>
+                            <td class="cart-totals__label">Subtotal</td>
+                            <td class="cart-totals__value">$1285.99</td>
+                        </tr>
+                        <tr class="cart-totals__row-alt">
+                            <td class="cart-totals__label">Shipping And Handling</td>
+                            <td class="cart-totals__shipping">
+                                <label><input type="radio" name="shipping" checked> Flat Rate: $3.99</label><br>
+                                <label><input type="radio" name="shipping"> Free Shipping</label><br>
+                                <label><input type="radio" name="shipping"> Flat Rate: $12.99</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cart-totals__label"><strong>Total</strong></td>
+                            <td class="cart-totals__total"><strong>$2015.00</strong></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="products-interested">
+                <div class="products-interested__title">
+                    YOU MAYBE INTERESTED IN
+                </div>
+                <div class="products-list">
+                    <div class="product-item">
+                        <div class="product-item__img">
+
+                        </div>
+                        <div class="product-item__infor">
+                            <div class="product-name">
+                                Denim claysi Shorts
+                            </div>
+                            <div class="product-price">
+                                $35.00-$89.99
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+
+                        </div>
+                        <div class="product-item__infor">
+                            <div class="product-name">
+                                Denim claysi Shorts
+                            </div>
+                            <div class="product-price">
+                                $35.00-$89.99
+                            </div>
+                        </div>
+                        <div class="product-sale-circle">SALE</div>
+                        <div class="product-sale-circle product-sale-circle--new">NEW</div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+
+                        </div>
+                        <div class="product-item__infor">
+                            <div class="product-name">
+                                Denim claysi Shorts
+                            </div>
+                            <div class="product-price">
+                                $35.00-$89.99
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+
+                        </div>
+                        <div class="product-item__infor">
+                            <div class="product-name">
+                                Denim claysi Shorts
+                            </div>
+                            <div class="product-price">
+                                $35.00-$89.99
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+
+                        </div>
+                        <div class="product-item__infor">
+                            <div class="product-name">
+                                Denim claysi Shorts
+                            </div>
+                            <div class="product-price">
+                                $35.00-$89.99
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+
+                        </div>
+                        <div class="product-item__infor">
+                            <div class="product-name">
+                                Denim claysi Shorts
+                            </div>
+                            <div class="product-price">
+                                $35.00-$89.99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-footer-container">
+                <div class="cart-footer-column">
+                    <img src="" alt="">
+                    <div class="footer-name">
+                        <div>THE</div> <br>
+                        <div style="font-weight: 700;">GEM</div> <br>
+                    </div>
+
+                    <span class="footer-text-decription">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean
+                        sollicitudin,
+                        lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                        Duis sed odio sit amet nibh.</span>
+                    <div class="cart-contact">
+                        <div class="cart-footer-item__title">
+                            CONTACT
+                            <div class="cart-lable"></div>
+
+                        </div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="text-footer-primary">Address:</span> <br>
+                        <span class="text-footer-primary">908 New Hampshire Avenue Northwest <br>#100, Washington, DC
+                            <br>20037, United States</span>
+                    </div>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Phone:</span>
+                            <a class="">+1 916-875-2235</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-fax"></i>
+                            <span>Fax:</span>
+                            <a>+1 916-875-2235</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Email:</span>
+                            <a style="color: #00c8ff;">cuonga2242002@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Website:</span>
+                            <a style="color: #00c8ff;" href="" target="_blank">www.codek-themes.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-footer-column">
+                    <div class="">
+                        <div class="cart-footer-item__title">
+                            RECENT POST
+                            <div class="cart-lable"></div>
+                        </div>
+                        <div class="cart-footer-description">
+                            <div class="recent-post-list">
+                                <div class="recent-post-item">
+                                    <div class="recent-post-item__img"></div>
+                                    <div class="recent-post-item__infor">
+                                        <div class="recent-item-infor-des text-footer-primary">Lorem Ipsum. Proin
+                                            gravida nibh vel velit
+                                            auctor </div>
+                                        <div class="recent-item-infor-noti">
+                                            <div class="" style="color: #00c8ff;"> 27 dec 2015</div>
+                                            <div class="recent-item-infor-message">
+                                                <i class="fa-solid fa-message"></i>
+                                                14
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="recent-post-item">
+                                    <div class="recent-post-item__img"></div>
+                                    <div class="recent-post-item__infor">
+                                        <div class="recent-item-infor-des text-footer-primary">Lorem Ipsum. Proin
+                                            gravida nibh vel velit
+                                            auctor </div>
+                                        <div class="recent-item-infor-noti">
+                                            <div class="" style="color: #00c8ff;"> 27 dec 2015</div>
+                                            <div class="recent-item-infor-message">
+                                                <i class="fa-solid fa-message"></i>
+                                                2
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="recent-post-item">
+                                    <div class="recent-post-item__img"></div>
+                                    <div class="recent-post-item__infor">
+                                        <div class="recent-item-infor-des text-footer-primary">Lorem Ipsum. Proin
+                                            gravida nibh vel velit
+                                            auctor </div>
+                                        <div class="recent-item-infor-noti">
+                                            <div class="" style="color: #00c8ff;"> 27 dec 2015</div>
+                                            <div class="recent-item-infor-message">
+                                                <i class="fa-solid fa-message"></i>
+                                                0
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-footer-item__title">
+                        USEFUL LINKS
+                        <div class="cart-lable"></div>
+                    </div>
+                    <ul class="cart-footer-list text-footer-primary ">
+                        <li class="cart-footer-item">General Information For Users</li>
+                        <li class="cart-footer-item ">Interactive Fairy Tales</li>
+                        <li class="cart-footer-item">Official Storybook Maker Website</li>
+                        <li class="cart-footer-item">Basic Knowledge and Experience</li>
+                    </ul>
+
+                </div>
+                <div class="cart-footer-column">
+                    <div class="cart-footer-item__title">
+                        EMAIL US
+                        <div class="cart-lable"></div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your name" class="form-input">
+                            <i class="fas fa-user form-icon"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="your@email.address" class="form-input">
+                            <i class="fas fa-envelope form-icon"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your message" class="form-input"></textarea>
+                        </div>
+                        <button class="form-submit">SEND MESSAGE</button>
+                    </form>
+                    <div class="cart-footer-item__title">
+                        PROJECTS / CLIENT
+                        <div class="cart-lable"></div>
+                    </div>
+                    <div class="footer-project-list">
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                    </div>
+                    <div class="footer-dot">
+                        <div class="cart-footer-dot-list">
+                            <div class="cart-footer-dot-item dot-active">
+
+                            </div>
+                            <div class="cart-footer-dot-item">
+
+                            </div>
+                            <div class="cart-footer-dot-item">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cart-footer-column">
+                    <div class="cart-footer-item__title">
+                        FLICKR FEED
+                        <div class="cart-lable"></div>
+                    </div>
+                    <div class="footer-project-list">
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                        <div class="footer-project-item">
+                        </div>
+                    </div>
+                    <div class="cart-footer-item__title">
+                        NEWSLETTER
+                        <div class="cart-lable"></div>
+                    </div>
+                    <p class="text-footer-primary">
+                        Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in
+                        your mailbox:
+                    </p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address">
+                        <button class="newsletter-btn">
+                            <i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <p class="newsletter-note">
+                        * Personal information will be encrypted
+                    </p>
+                    <div class="text-footer-primary"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <footer class="footer-bottom">
+            <div class="footer-bottom__copyright">
+                &copy; Copyright 2015 <a href="#" class="footer-link">CodexThemes</a>
+            </div>
+            <ul class="footer-bottom__links">
+                <li><a href="#" class="footer-link">Support</a></li>
+                <li><a href="#" class="footer-link">Contact Us</a></li>
+                <li><a href="#" class="footer-link">Disclaimer</a></li>
+                <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+            <div class="footer-bottom__social">
+                <a href="#" class="social-icon"><i class="fab fa-twitter" style="color: #16a7b9;"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f" style="color: #2a49a8;"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in" style="color: #0288d1;"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram" style="color: #786f4c;"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube" style="color: red;"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google-plus-g" style="color: red;"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-pinterest" style="color: #ff5757;"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
