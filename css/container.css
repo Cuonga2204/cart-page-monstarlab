@@ -17,15 +17,17 @@
 }
 .cart-title--hilight{
     font-weight: 700;
+    margin-right: 10px;
 }
 .cart-breadcrum{
     margin-top: 80px;
     display: flex;
     gap: 7px;
     align-items: center;
-}
-.cart-breadcrum{
     font-size: 14px;
+}
+.cart-breadcrum i{
+    color: #697b87;
 }
 .cart-tablet-left{
     display: flex;
@@ -40,6 +42,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 5px 60px;
+    padding-bottom: 60px;
     margin-top: 60px;
     flex-direction: column;
 }
@@ -48,6 +51,9 @@
     letter-spacing: 1px;
     color: var(--text-color);
 }
+.cart-products-total span{
+    color:#00c8ff
+}
 
 /* Bang san pham  */
 .cart-table {
@@ -55,18 +61,21 @@
     border-collapse: collapse;
     margin-top: 20px;
     border: 1px solid #dde2e3;
+    table-layout: fixed;
 }
-
+.cart-table-th-empty{
+    width: 6%;
+}
 th {
     text-align: left;
-    padding: 14px 10px;
+    padding: 14px 0;
     background: #b6c6c9;
     color: white;
     font-size: 14px;
 }
 
 td {
-    padding: 15px;
+    padding: 20px 0;
     font-size: 13px;
 }
 
@@ -75,21 +84,33 @@ td {
     display: flex;
     align-items: center;
 }
-
-.product-image {
-    width: 50px;
-    height: 50px;
-    background: #99a9b5;
-    margin: 0 10px;
+.cart-table-product-th{
+    width: 8%;
+}
+.product span{
+    margin-left: 25px;
+}
+.name-product:hover{
+    color: #009ddf;
     cursor: pointer;
 }
-.product-image i
 
+.product-image{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    background-color: #99a9b5;
+}
+
+.remove-product-th{
+    text-align: center;
+}
 /* Nút xóa sản phẩm */
-.remove {
+.remove-product-icon {
+    font-size: 16px;
+    margin: auto;
     color: red;
     cursor: pointer;
-    margin-right: 10px;
 }
 
 /* Nút tăng giảm số lượng */
@@ -117,7 +138,6 @@ td {
 
 .quantity {
     display: flex;
-    align-items: center;
 }
 
 /* Coupon Container */
@@ -129,8 +149,7 @@ td {
 }
 
 .coupon-input {
-    width: 250px;
-    padding: 8px;
+    padding: 8px 250px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
@@ -192,8 +211,9 @@ td {
     background-color: #444;
 }
 .product i {
-    font-size: 15px;
+    font-size: 20px;
     color: #f44336;
+    margin: 0 16px;
 }
 .cart-product-alt{    
     background-color: #f0f3f2;
@@ -217,13 +237,13 @@ td {
 }
 
 .btn-apply{
-    width: 83px;
     border-radius: 3px;
-    width: 83px;
+    padding: 0 25px;
     border-radius: 4px;
     border: 3px solid #00bcd4;
     color: #00bcd4;
     font-weight: 600;
+    background-color: white;
 }
 .btn-apply:hover{
     background-color: #00bcd4;
@@ -240,7 +260,7 @@ td {
     border: none;
     border-radius: 2px;
     font-weight: 600;
-    width: 130px;
+    padding: 0 15px;
 }
 .button-update-cart:hover{
     background-color: #367895;
@@ -251,7 +271,7 @@ td {
     border: none;
     border-radius: 2px;
     font-weight: 600;
-    width: 130px;
+    padding: 0 20px;
     gap: 7px;
 }
 .button-update-checkout:hover{
@@ -266,9 +286,10 @@ td {
 .cart-summary{
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 .shipping-caculate{
-    width: 46%;
+    width: 50%;
 }
 .shipping-caculate-title{
     font-size: 30px;
@@ -277,7 +298,7 @@ td {
     padding: 40px 0;
 }
 .cart-totals{
-    width: 46%;
+    width: 50%;
 }
 .cart-totals__title{
     font-size: 20px;
@@ -287,6 +308,18 @@ td {
     flex-direction: column;
     gap: 16px;
 }
+.form-infor-shipping{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.input-shipping{
+    width: 50%;
+    height: 30px;
+}
+.input-zip-code{
+    width: 50%;
+}
 .infor-country{
     height: 30px;
     border: 1px solid #d6dcda;
@@ -294,9 +327,7 @@ td {
     color: #6f7573;
     padding: 5px;
 }
-.btn-update-totals{
-    width: 150px;
-}
+
 .btn-update-totals{
     border: 3px solid #00c8ff;
     background-color: white;
@@ -325,6 +356,7 @@ td {
     width: 100%;
 }
 .cart-totals__table td {
+    padding-left: 15px;
     border-bottom: 1px solid #dde2e3;
     border-right: 1px solid #dde2e3;
 }
@@ -334,10 +366,9 @@ td {
 /* product list - item  */
 
 .products-interested__title{
-    padding: 25px 0;
+    padding: 60px 0;
     font-size: 34px;
     color: #3c3950;
-    margin: 50px 0;
 }
 .products-list{
     display: grid;
@@ -372,10 +403,10 @@ td {
     color: #00c8ff;
 }
 .product-sale-circle{
+    aspect-ratio: 1;
+    padding: 12px;
     position: absolute;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
     background-color: #009ddf;
     display: flex;
     justify-content: center;
@@ -388,10 +419,9 @@ td {
     z-index: 2;
 }
 .product-sale-circle--new{
-    width: 50px;
-    height: 50px;
     top: 67px;
     right: -20px;
     background-color: #393d50;
     z-index: 1;
+    padding: 7px;
 }
