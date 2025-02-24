@@ -45,7 +45,10 @@
 
             </div>
             <div class="header-main">
-                <div class="logo">THEGEM</div>
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="">
+                    THEGEM
+                </div>
                 <nav class="nav-menu">
                     <a href="#">HOME</a>
                     <a href="#">PAGES</a>
@@ -64,7 +67,6 @@
             </div>
             <div class="cart-tablet">
                 <div class="cart-tablet-left">
-
                     <div class="cart-title">
                         <span class="cart-title--hilight ">WOO</span>
                         <span> CART</span>
@@ -76,10 +78,10 @@
                         <i class="fa-solid fa-arrow-right "></i>
                         <span class="text-primary">second Leave</span>
                         <i class="fa-solid fa-arrow-right "></i>
-                        <span class="text-primary">Third level</span>
+                        <span class="text-primary breadcrum-acitve">Third level</span>
                     </div>
                 </div>
-                <i class="fa-solid fa-cart-shopping cart-icon-tablet"></i>
+                <img class="img-cart-header" clas src="./assets/img/cart-icon3.png" alt="">
             </div>
         </header>
         <div class="cart-container">
@@ -91,7 +93,7 @@
                     <tr>
                         <th class="cart-table-th-empty"></th>
                         <th class="cart-table-product-th"><span class="cart-table-product-title">PRODUCT</span></th>
-                        <th></th>
+                        <th class="cart-table-th-name-product"></th>
                         <th>PRICE</th>
                         <th>QUANTITY</th>
                         <th>TOTAL</th>
@@ -107,7 +109,9 @@
                             <!-- <div class="product-image"></div> -->
 
                         </td>
-                        <td><span class="name-product">Lorem ipsum dolor sit amet</span></td>
+                        <td><span class="name-product">Lorem ipsum dolor sit amet</span>
+                            <span class="product-attributes">Size:Large, color:black</span>
+                        </td>
                         <td>$35.99</td>
                         <td>
                             <div class="quantity">
@@ -129,7 +133,9 @@
                             <!-- <div class="product-image"></div> -->
 
                         </td>
-                        <td><span class="name-product">Lorem ipsum dolor sit amet</span></td>
+                        <td><span class="name-product">Lorem ipsum dolor sit amet</span>
+
+                        </td>
                         <td>$35.99</td>
                         <td>
                             <div class="quantity">
@@ -151,7 +157,8 @@
                             <!-- <div class="product-image"></div> -->
 
                         </td>
-                        <td><span class="name-product">Lorem ipsum dolor sit amet</span></td>
+                        <td><span class="name-product">Lorem ipsum dolor sit amet <span
+                                    class="product-attributes">Size:Large</span></span></td>
                         <td>$35.99</td>
                         <td>
                             <div class="quantity">
@@ -363,11 +370,16 @@
                 <div class="cart-footer-column">
                     <div>
                         <div class="footer-name">
-                            <div>THE</div> <br>
-                            <div class="footer-name-bold">GEM</div> <br>
+                            <img src="./assets/img/logo-color.png" alt="">
+                            <div class="footer-name-tile">
+                                <div>THE</div>
+                                <div class="footer-name-bold">GEM</div>
+                            </div>
+
                         </div>
 
-                        <span class="footer-text-decription">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        <span class="footer-text-decription ">Lorem Ipsum. Proin gravida nibh vel
+                            velit auctor aliquet.
                             Aenean
                             sollicitudin,
                             lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
@@ -381,28 +393,32 @@
                             <div class="cart-lable"></div>
 
                         </div>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span class="text-footer-primary">Address:</span> <br>
-                        <span class="text-footer-primary">908 New Hampshire Avenue Northwest <br>#100, Washington, DC
-                            <br>20037, United States</span>
+                        <div class="cart-contact-description">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="text-footer-primary">Address:</span> <br>
+                            <span class="text-footer-primary">908 New Hampshire Avenue Northwest <br>#100, Washington,
+                                DC
+                                <br>20037, United States</span>
+                        </div>
+
                     </div>
                     <div class="contact-list">
-                        <div class="contact-item">
+                        <div class="contact-item text-footer-primary">
                             <i class="fa-solid fa-headphones"></i>
                             <span>Phone:</span>
                             <a>+1 916-875-2235</a>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-item text-footer-primary">
                             <i class="fa-solid fa-fax"></i>
                             <span>Fax:</span>
                             <a>+1 916-875-2235</a>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-item text-footer-primary">
                             <i class="fa-solid fa-envelope"></i>
                             <span>Email:</span>
                             <a class="text-primary">cuonga2242002@gmail.com</a>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-item text-footer-primary">
                             <i class="fa-solid fa-globe"></i>
                             <span>Website:</span>
                             <a class="text-primary" target="_blank">www.codek-themes.com</a>
@@ -410,72 +426,70 @@
                     </div>
                 </div>
                 <!-- <div class="cart-footer-column"> -->
-                <div>
+                <div class="footer-item">
                     <div class="cart-footer-item__title">
                         RECENT POST
                         <div class="cart-lable"></div>
                     </div>
-                    <div class="cart-footer-description">
-                        <div class="recent-post-list">
-                            <div class="recent-post-item">
-                                <div class="recent-post-item__img"></div>
-                                <div class="recent-post-item__infor">
-                                    <div class="recent-item-infor-des text-footer-primary">Lorem Ipsum. Proin
-                                        gravida nibh vel velit
-                                        auctor </div>
-                                    <div class="recent-item-infor-noti">
-                                        <div class="text-primary"> 27 dec 2015</div>
-                                        <div class="recent-item-infor-message">
-                                            <i class="fa-solid fa-message"></i>
-                                            14
-                                        </div>
+                    <div class="recent-post-list">
+                        <div class="recent-post-item outline-button-dashed">
+                            <div class="recent-post-item__img"></div>
+                            <div class="recent-post-item__infor">
+                                <div class="recent-item-infor-des text-footer-primary">Lorem Ipsum. Proin
+                                    gravida nibh vel velit
+                                    auctor </div>
+                                <div class="recent-item-infor-noti">
+                                    <span class="text-primary"> 27 dec 2015</span>
+                                    <div class="recent-item-infor-message">
+                                        <i class="fa-solid fa-message"></i>
+                                        14
                                     </div>
-
                                 </div>
+
                             </div>
-                            <div class="recent-post-item">
-                                <div class="recent-post-item__img"></div>
-                                <div class="recent-post-item__infor">
-                                    <div class="recent-item-infor-des text-footer-primary">Lorem Ipsum. Proin
-                                        gravida nibh vel velit
-                                        auctor </div>
-                                    <div class="recent-item-infor-noti">
-                                        <div class="text-primary"> 27 dec 2015</div>
-                                        <div class="recent-item-infor-message">
-                                            <i class="fa-solid fa-message"></i>
-                                            2
-                                        </div>
+                        </div>
+                        <div class="recent-post-item outline-button-dashed">
+                            <div class="recent-post-item__img"></div>
+                            <div class="recent-post-item__infor">
+                                <div class="recent-item-infor-des text-footer-primary">Lorem Ipsum. Proin
+                                    gravida nibh vel velit
+                                    auctor </div>
+                                <div class="recent-item-infor-noti">
+                                    <span class="text-primary"> 27 dec 2015</span>
+                                    <div class="recent-item-infor-message">
+                                        <i class="fa-solid fa-message"></i>
+                                        2
                                     </div>
-
                                 </div>
+
                             </div>
-                            <div class="recent-post-item">
-                                <div class="recent-post-item__img"></div>
-                                <div class="recent-post-item__infor">
-                                    <div class="recent-item-infor-des text-footer-primary">Lorem Ipsum. Proin
-                                        gravida nibh vel velit
-                                        auctor </div>
-                                    <div class="recent-item-infor-noti">
-                                        <div class="text-primary"> 27 dec 2015</div>
-                                        <div class="recent-item-infor-message">
-                                            <i class="fa-solid fa-message"></i>
-                                            0
-                                        </div>
+                        </div>
+                        <div class="recent-post-item">
+                            <div class="recent-post-item__img"></div>
+                            <div class="recent-post-item__infor">
+                                <div class="recent-item-infor-des text-footer-primary">Lorem Ipsum. Proin
+                                    gravida nibh vel velit
+                                    auctor </div>
+                                <div class="recent-item-infor-noti">
+                                    <span class="text-primary"> 27 dec 2015</span>
+                                    <div class="recent-item-infor-message">
+                                        <i class="fa-solid fa-message"></i>
+                                        0
                                     </div>
-
                                 </div>
+
                             </div>
                         </div>
                     </div>
 
 
                 </div>
-                <div>
+                <div class="footer-item">
                     <div class="cart-footer-item__title">
                         EMAIL US
                         <div class="cart-lable"></div>
                     </div>
-                    <form class="contact-form">
+                    <div class="contact-form">
                         <div class="form-group">
                             <input type="text" placeholder="Your name" class="form-input">
                             <i class="fas fa-user form-icon"></i>
@@ -488,9 +502,9 @@
                             <textarea placeholder="Your message" class="form-input"></textarea>
                         </div>
                         <button class="form-submit">SEND MESSAGE</button>
-                    </form>
+                    </div>
                 </div>
-                <div>
+                <div class="footer-item">
                     <div class="cart-footer-item__title">
                         FLICKR FEED
                         <div class="cart-lable"></div>
@@ -517,15 +531,16 @@
                     </div>
 
                 </div>
-                <div>
+                <div class="footer-item">
                     <div class="cart-footer-item__title">
                         USEFUL LINKS
                         <div class="cart-lable"></div>
                     </div>
                     <ul class="cart-footer-list text-footer-primary ">
-                        <li class="cart-footer-item">General Information For Users</li>
-                        <li class="cart-footer-item ">Interactive Fairy Tales</li>
-                        <li class="cart-footer-item">Official Storybook Maker Website</li>
+                        <li class="cart-footer-item outline-button-dashed">General Information For Users</li>
+                        <li class="cart-footer-item outline-button-dashed">Interactive Fairy Tales</li>
+                        <li class="cart-footer-item outline-button-dashed">Official Storybook Maker Website</li>
+                        <li class="cart-footer-item outline-button-dashed">Basic Knowledge and Experience</li>
                         <li class="cart-footer-item">Basic Knowledge and Experience</li>
                     </ul>
                 </div>
@@ -534,7 +549,7 @@
                 <!-- </div> -->
                 <!-- <div class="cart-footer-column"> -->
 
-                <div>
+                <div class="footer-item">
                     <div class="cart-footer-item__title">
                         PROJECTS / CLIENT
                         <div class="cart-lable"></div>
@@ -574,24 +589,28 @@
 
                 <!-- <div class="cart-footer-column"> -->
 
-                <div>
+                <div class="footer-item">
                     <div class="cart-footer-item__title">
                         NEWSLETTER
                         <div class="cart-lable"></div>
                     </div>
-                    <p class="text-footer-primary">
-                        Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in
-                        your mailbox:
-                    </p>
-                    <div class="newsletter-form">
-                        <input type="email" class="newsletter-input" placeholder="Your email address">
-                        <button class="newsletter-btn">
-                            <i class="fa fa-arrow-right"></i>
-                        </button>
+                    <div class="newsletter-list">
+                        <p class="text-footer-primary">
+                            Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in
+                            your mailbox:
+                        </p>
+                        <div class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your email address">
+                            <button class="newsletter-btn">
+                                <i class="fa fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <p class="newsletter-note">
+                            * Personal information will be encrypted
+                        </p>
+
                     </div>
-                    <p class="newsletter-note">
-                        * Personal information will be encrypted
-                    </p>
+
                 </div>
 
                 <!-- </div> -->
@@ -611,14 +630,15 @@
                 <li><a href="#" class="footer-link">Privacy Policy</a></li>
             </ul>
             <div class="footer-bottom__social">
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter icon-footer-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f icon-footer-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in icon-footer-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram icon-footer-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube icon-footer-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google-plus-g icon-footer-google"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-pinterest icon-footer-pinterest"></i></a>
             </div>
+
         </footer>
 
     </div>

@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 5px 60px;
+    padding: 5px 130px;
 }
 .header-nav-icon-link{
     text-decoration: none;
@@ -63,13 +63,18 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 40px 60px;
+    padding: 40px 130px;
 }
 .logo{
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #3c3950;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    margin-right: 7px;
 }
 .nav-menu{
     display: flex;
@@ -114,4 +119,7 @@
     align-items: center;
     justify-content: center;
     clip-path: polygon(32% 0%, 100% 0%, 100% 100%, 32% 100%, 0% 50%);
+}
+.img-cart-header{
+    width: 12%;
 }

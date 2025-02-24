@@ -3,13 +3,8 @@
     background-color: #f4f6f7;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
-    padding: 10px 60px;
-}
-.cart-title {
-    display: flex;
-    align-items: center;
+    padding: 0px 130px;
 }
 .cart-title span{
     font-size: 40px;
@@ -20,18 +15,23 @@
     margin-right: 10px;
 }
 .cart-breadcrum{
-    margin-top: 80px;
     display: flex;
     gap: 7px;
     align-items: center;
     font-size: 14px;
 }
+.breadcrum-acitve{
+    border-bottom: 4px solid #ff5252;
+    color: #9ca6ad;
+}
+
 .cart-breadcrum i{
     color: #697b87;
 }
 .cart-tablet-left{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .cart-icon-tablet{
     font-size: 132px;
@@ -41,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 5px 60px;
+    padding: 5px 130px;
     padding-bottom: 60px;
     margin-top: 60px;
     flex-direction: column;
@@ -73,7 +73,6 @@ th {
     color: white;
     font-size: 14px;
 }
-
 td {
     padding: 20px 0;
     font-size: 13px;
@@ -83,6 +82,16 @@ td {
 .product {
     display: flex;
     align-items: center;
+}
+.name-product{
+    color: #00bcd4;
+}
+.cart-table-th-name-product{
+    width: 30%;
+}
+.product-attributes{
+    color: #8c8b93;
+    margin-left: 4px;
 }
 .cart-table-product-th{
     width: 8%;
@@ -96,6 +105,7 @@ td {
 }
 
 .product-image{
+    aspect-ratio: 1;
     width: 50%;
     height: 50%;
     object-fit: cover;
@@ -143,7 +153,6 @@ td {
 /* Coupon Container */
 .coupon-container {
     display: flex;
-    margin-top: 20px;
     justify-content: flex-start;
     align-items: center;
 }
@@ -366,7 +375,7 @@ td {
 /* product list - item  */
 
 .products-interested__title{
-    padding: 60px 0;
+    padding: 20px 0;
     font-size: 34px;
     color: #3c3950;
 }
