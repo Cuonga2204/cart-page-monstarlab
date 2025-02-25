@@ -202,8 +202,8 @@
 }
 .form-submit {
   padding: 18px;
-  background-color: #394050;
-  color: var(--text-color);
+  background-color: var(--background-btn-footer-color);
+  color: #98a9b3;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -272,7 +272,7 @@
 }
 .newsletter-btn {
   width: 50px;
-  background-color: #394050;
+  background-color: var(--background-btn-color);
   border: none;
   cursor: pointer;
 }
@@ -296,7 +296,7 @@
 }
 .footer-bottom__copyright a {
   text-decoration: none;
-  color: #009ddf;
+  color: var(--aqua-color);
 }
 .footer-bottom__links {
   display: flex;
@@ -318,7 +318,7 @@
 /* Icon contact footer  */
 /* Twitter */
 .icon-footer-twitter {
-  color: #16a7b9;
+  color: var(--aqua-color);
 }
 
 /* Facebook */
@@ -328,7 +328,7 @@
 
 /* LinkedIn */
 .icon-footer-linkedin {
-  color: #0288d1;
+  color: var(--aqua-color);
 }
 
 /* Instagram */
