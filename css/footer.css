@@ -95,7 +95,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 6px;
   flex-grow: 1;
 }
 .recent-post-item {
@@ -272,9 +271,13 @@
 }
 .newsletter-btn {
   width: 50px;
-  background-color: var(--background-btn-color);
+  background-color: var(--background-btn-footer-color);
   border: none;
   cursor: pointer;
+}
+.newsletter-btn i{
+  color: #acb3b7;
+  font-size: 17px;
 }
 .newsletter-btn:hover {
   background-color: #313746;

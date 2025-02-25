@@ -125,8 +125,7 @@ td {
 
 .product-image {
   aspect-ratio: 1;
-  width: 50%;
-  height: 50%;
+  width: 63%;
   object-fit: cover;
 }
 
@@ -249,7 +248,7 @@ td {
   border-radius: 4px;
 }
 .coupon-input::placeholder {
-  color: var(--grey-input-placeholder);;
+  color: var(--text-color-input);
   opacity: 1;
 }
 
