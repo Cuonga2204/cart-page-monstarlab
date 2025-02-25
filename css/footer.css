@@ -35,7 +35,7 @@
 }
 .footer-text-decription {
   color: #aaaab1;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.6;
   letter-spacing: 1px;
 }
@@ -112,8 +112,7 @@
 }
 .recent-post-item__img {
   aspect-ratio: 1;
-  width: 70px;
-  height: 70px;
+  width: 45%;
   background-color: #99a9b5;
   border-radius: 50%;
   cursor: pointer;
@@ -133,7 +132,6 @@
   font-size: 11px;
 }
 .recent-item-infor-message {
-  padding-right: 18px;
   color: var(--grey-color);
   font-size: 11px;
 }
@@ -162,14 +160,14 @@
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  gap: 14px;
+  gap: 6px;
 }
 .form-group {
   position: relative;
 }
 .form-group input {
   background-color: var(--background-input-color);
-  padding: 19px;
+  padding: 12px;
   width: 100%;
   outline: none;
   border: 1px solid var(--border-input);
@@ -189,7 +187,7 @@
 }
 .form-group textarea {
   background-color: var(--background-input-color);
-  padding: 12px;
+  padding: 13px;
   width: 100%;
   outline: none;
   border: 1px solid var(--border-input);
@@ -213,11 +211,12 @@
 .footer-project-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 6px;
+  flex-grow: 1;
 }
 .footer-project-item {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  aspect-ratio: 1;
   background-color: var(--grey-footer-grid-color);
 }
 .footer-dot {
@@ -276,7 +275,7 @@
   cursor: pointer;
 }
 .newsletter-btn i{
-  color: #acb3b7;
+  color: var(--grey-color);
   font-size: 17px;
 }
 .newsletter-btn:hover {

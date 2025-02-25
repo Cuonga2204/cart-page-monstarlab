@@ -11,7 +11,6 @@
 }
 .cart-title span {
   font-size: 50px;
-  padding-top: 25px;
 }
 .cart-title--hilight {
   font-weight: 700;
@@ -248,7 +247,7 @@ td {
   border-radius: 4px;
 }
 .coupon-input::placeholder {
-  color: var(--text-color-input);
+  color: #73797a;
   opacity: 1;
 }
 
@@ -428,7 +427,7 @@ td {
   cursor: pointer;
 }
 .product-item__img {
-  height: 230px;
+  height: 177px;
   background-color: var(--grey-light-color);
 }
 .product-item__infor {

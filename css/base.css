@@ -25,11 +25,6 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-.grid {
-  width: 1400px;
-  max-width: 100%;
-  margin: 0 auto;
-}
 body {
   margin: 0;
   padding: 0;
@@ -53,7 +48,7 @@ input:focus {
 }
 .text-footer-primary {
   color: #aaaab1;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 1px;
   line-height: 2;
 }
