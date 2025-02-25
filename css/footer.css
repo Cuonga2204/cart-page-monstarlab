@@ -60,7 +60,7 @@
   border-color: transparent transparent red red;
   margin: 10px 0 0 3px;
 }
-.cart-contact-infor{
+.cart-contact-infor {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -103,9 +103,9 @@
   justify-content: space-between;
   cursor: pointer;
 }
-.dashed{
-    border: 1px dashed var(--text-color);
-    border-spacing: 10px
+.dashed {
+  border: 1px dashed var(--text-color);
+  border-spacing: 10px;
 }
 .outline-button-dashed {
   border-bottom: 1px dotted #595a67;
@@ -169,15 +169,15 @@
   position: relative;
 }
 .form-group input {
-  background-color: #181828;
+  background-color: var(--background-input-color);
   padding: 19px;
   width: 100%;
   outline: none;
-  border: 1px solid #464141;
-  color: #8d8181;
+  border: 1px solid var(--border-input);
+  color: var(--intput-color);
 }
 
-.form-group input:focus{
+.form-group input:focus {
   outline: 1px solid var(--aqua-color);
 }
 .form-group i {
@@ -189,22 +189,25 @@
   transform: translateY(-50%);
 }
 .form-group textarea {
-  background-color: #181828;
+  background-color: var(--background-input-color);
   padding: 12px;
   width: 100%;
   outline: none;
-  border: 1px solid #464141;
-  color: #8d8181;
+  border: 1px solid var(--border-input);
+  color: var(--intput-color);
   height: 100px;
 }
+.form-group textarea:focus{
+  outline: 1px solid var(--aqua-color);
+}
 .form-submit {
-    padding: 18px;
-    background-color: #394050;
-    color: var(--text-color);
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    letter-spacing: 1px;
+  padding: 18px;
+  background-color: #394050;
+  color: var(--text-color);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
 
 /* footer project client  */
@@ -254,12 +257,15 @@
   margin: 0;
 }
 .newsletter-input {
-  background-color: #181828;
+  background-color: var(--background-input-color);
   padding: 12px;
   width: 100%;
   outline: none;
-  border: 1px solid #464141;
-  color: #8d8181;
+  border: 1px solid var(--border-input);
+  color: var(--intput-color);
+}
+.newsletter-input:focus{
+  outline: 1px solid var(--aqua-color);
 }
 .newsletter-form {
   display: flex;
@@ -283,7 +289,7 @@
   padding: 5px 200px;
   justify-content: space-between;
   align-items: center;
-  background-color: #181828;
+  background-color: var(--background-input-color);
 }
 .footer-bottom__copyright {
   color: var(--text-footer-description);
