@@ -1,0 +1,128 @@
+.header {
+  width: 100%;
+}
+
+.header-nav {
+  background-color: var(--background-header-nav-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 200px;
+}
+.header-nav-icon-link {
+  text-decoration: none;
+}
+.header-nav-icon-link i {
+  font-size: 14px;
+}
+.header-nav-icon-link span {
+  font-size: 14px;
+  margin-left: 3px;
+  color: var(--grey-color);
+}
+.social-icons {
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+}
+.social-icons i {
+  font-size: 16px;
+  margin-right: 10px;
+  color: var(--grey-color);
+}
+.social-icons .fa-youtube {
+  color: red;
+}
+.header-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav-links a {
+  text-decoration: none;
+  color: var(--grey-color);
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 2px;
+}
+.header-nav-links i {
+  color: var(--grey-color);
+}
+.wishlist-btn {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: var(--slate-gray-color);
+  color: white;
+  cursor: pointer;
+}
+/* header main  */
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 200px;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--slate-gray-color);
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  margin-right: 7px;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.nav-menu a {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--slate-gray-color);
+}
+.nav-menu a:hover {
+  color: var(--aqua-color);
+}
+.shop-btn {
+  border: 2px solid var(--slate-gray-color);
+  padding: 5px;
+}
+.img-england {
+  width: 21px;
+  margin-left: auto;
+}
+.cart-icon {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 15px;
+}
+.cart-icon i {
+  font-size: 15px;
+}
+
+.cart-badge {
+  top: -5px;
+  right: -41px;
+  background-color: var(--aqua-color);
+  color: white;
+  font-size: 13px;
+  padding: 2px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(32% 0%, 100% 0%, 100% 100%, 32% 100%, 0% 50%);
+}
+.img-cart-header {
+  width: 12%;
+  padding: 30px 0;
+}
