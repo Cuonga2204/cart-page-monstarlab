@@ -9,7 +9,7 @@
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   padding: 100px 200px;
-  column-gap: 30px;
+  column-gap: 20px;
   row-gap: 60px;
 }
 .cart-footer-column {
@@ -112,7 +112,8 @@
 }
 .recent-post-item__img {
   aspect-ratio: 1;
-  width: 45%;
+  width: 65px;
+  height: 65px;
   background-color: #99a9b5;
   border-radius: 50%;
   cursor: pointer;
@@ -211,7 +212,7 @@
 .footer-project-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
+  gap: 10px;
   flex-grow: 1;
 }
 .footer-project-item {
