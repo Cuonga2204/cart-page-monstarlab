@@ -1,6 +1,5 @@
-
-@use 'variables' as *;
-@use 'mixins' as *;
+@use "variables" as *;
+@use "mixins" as *;
 * {
   box-sizing: inherit;
 }
@@ -21,7 +20,7 @@ body {
   padding: 10px;
   border: 1px solid #d6dcda;
   border-radius: $border-radius-base;
-  &:focus{
+  &:focus {
     border: 1px solid #92989a;
     outline: none;
   }

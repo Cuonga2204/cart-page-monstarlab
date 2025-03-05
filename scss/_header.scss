@@ -1,17 +1,17 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-@keyframes fadeIn{
-  from{
+@keyframes fadeIn {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
 .header {
   width: 100%;
-  &-nav-wrapper{
+  &-nav-wrapper {
     background-color: $background-header-nav-color;
   }
 
@@ -101,24 +101,23 @@
   cursor: pointer;
 }
 /* header main  */
-.nav-hamburger-btn{
+.nav-hamburger-btn {
   @include flex-align-center;
-  i{
+  i {
     font-size: 30px;
     display: none;
     cursor: pointer;
-
   }
 }
 
-.nav-input:checked ~ .nav-overlay{
+.nav-input:checked ~ .nav-overlay {
   display: block;
 }
 
-.nav-input:checked ~ .nav-menu-mobile{
+.nav-input:checked ~ .nav-menu-mobile {
   transform: translateX(0%);
 }
-.nav-overlay{
+.nav-overlay {
   position: fixed;
   top: 0;
   right: 0;
@@ -127,36 +126,36 @@
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 100;
   display: none;
-  animation: fadeIn linear 0.2s ;
+  animation: fadeIn linear 0.2s;
 }
-.nav-menu-mobile{
+.nav-menu-mobile {
   position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 270px;
-    max-width: 100%;
-    background-color: #fff;
-    z-index: 200;
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
-    flex-direction: column;
-    transform: translateX(-100%);
-    transition: transform linear 0.2s;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 270px;
+  max-width: 100%;
+  background-color: #fff;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform linear 0.2s;
 
-  li{
+  li {
     list-style: none;
   }
 
-  &__list{
+  &__list {
     width: 100%;
     margin-top: 24px;
     display: flex;
     flex-direction: column;
     padding-left: 0;
   }
-  &__link{
+  &__link {
     text-decoration: none;
     color: #333;
     display: block;
@@ -164,15 +163,15 @@
     font-weight: 700;
     font-size: 12px;
     text-align: center;
-    &--alt{
+    &--alt {
       background-color: #f0f3f2;
     }
-    &:hover{
+    &:hover {
       color: white;
       background-color: $aqua-color;
     }
   }
-  &__header i{
+  &__header i {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -180,7 +179,6 @@
     color: #666;
     cursor: pointer;
   }
-
 }
 .nav-menu {
   @include flex-align-center;
@@ -198,10 +196,10 @@
     }
   }
 }
-.nav-menu-mobile__divider{
+.nav-menu-mobile__divider {
   width: 70%;
   height: 1px;
-  background-color: #e2d4d4
+  background-color: #e2d4d4;
 }
 .shop-btn {
   border: 2px solid $slate-gray-color;
