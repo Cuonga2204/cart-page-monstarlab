@@ -12,7 +12,6 @@
     row-gap: 60px;
     max-width: 1024px;
     margin: 0 auto;
-
   }
   &-column-1 {
     @include flex-column-space-between;
@@ -295,11 +294,11 @@
   color: #746a6a;
   font-size: 12px;
 }
-.footer-bottom-wrapper{
-  background-color: $background-input-color
+.footer-bottom-wrapper {
+  background-color: $background-input-color;
 }
-.footer-bottom-contact{
-  display: contents
+.footer-bottom-contact {
+  display: contents;
 }
 .footer-bottom {
   @include flex-space-between;

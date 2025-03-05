@@ -134,7 +134,7 @@
     }
 
     &__cell--infor {
-      @include flex-space-between;
+      @include flex-column-space-between;
       padding-left: 10px;
       padding-right: 30px;
       height: 70px;
