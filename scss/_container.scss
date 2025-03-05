@@ -322,6 +322,7 @@ input[type="radio"] {
 
 .cart-summary {
   @include flex-space-between;
+  gap: 20px;
 }
 .shipping-caculate {
   width: 50%;
