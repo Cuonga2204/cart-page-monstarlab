@@ -190,7 +190,6 @@
 
   textarea {
     background-color: $background-input-color;
-    padding: 13px;
     width: 100%;
     outline: none;
     border: 1px solid $border-input;
@@ -203,7 +202,6 @@
   }
 }
 .form-submit {
-  padding: 13px;
   background-color: $background-btn-footer-color;
   color: #98a9b3;
   font-weight: 600;
@@ -262,7 +260,6 @@
 }
 .newsletter-input {
   background-color: $background-input-color;
-  padding: 12px;
   width: 100%;
   outline: none;
   border: 1px solid $border-input;
@@ -292,7 +289,6 @@
 }
 .newsletter-note {
   color: #746a6a;
-  font-size: 12px;
 }
 .footer-bottom-wrapper {
   background-color: $background-input-color;
@@ -305,7 +301,6 @@
   align-items: center;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 5px;
 
   &__copyright {
     color: $text-footer-description;

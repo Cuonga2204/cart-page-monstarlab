@@ -2,7 +2,6 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-
 @media only screen and (max-width: 1024px) {
   .header-nav-links {
     display: none;

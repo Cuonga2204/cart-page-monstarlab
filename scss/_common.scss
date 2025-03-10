@@ -1,0 +1,65 @@
+@use "variables" as *;
+
+$spacing-values: (0px, 4px, 5px, 6px, 7px, 8px, 10px, 12px, 13px, 15px, 16px, 20px, 24px, 25px, 30px, 32px, 40px);
+
+$font-sizes: (12px, 13px, 14px, 15px, 16px, 18px, 20px, 24px, 30px, 34px, 36px);
+
+$colors: (
+  secondary: $grey-color,
+  text: $text-color,
+  accent: $slate-gray-color,
+  red: red,
+  white: $white-color,
+  primary: $primary-color,
+  text-input: $text-color-input,
+  footer-description: $text-footer-description,
+  slate-gray: $slate-gray-color,
+  btn-footer: $background-btn-footer-color,
+  aqua: $aqua-color,
+  grey: $grey-color,
+  grey-light: $grey-light-color,
+  grey-dark: $grey-dark-color,
+  grey-footer-grid: $grey-footer-grid-color,
+  border-table: $border-table-color,
+  header-nav: $background-header-nav-color,
+  input-bg: $background-input-color,
+  input-text: $intput-color,
+  border-input: $border-input
+);
+
+@each $size in $spacing-values {
+  $size-value: str-slice(#{$size}, 1, -3); // Loại bỏ "px"
+  //margin
+  .m-#{$size-value} { margin: $size; }
+  .mt-#{$size-value} { margin-top: $size; }
+  .mr-#{$size-value} { margin-right: $size; }
+  .mb-#{$size-value} { margin-bottom: $size; }
+  .ml-#{$size-value} { margin-left: $size; }
+  .mx-#{$size-value} {margin-left: $size; margin-right: $size;}
+  .my-#{$size-value} {margin-top: $size; margin-bottom: $size;}
+  .mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  //padding
+  .p-#{$size-value} { padding: $size; }
+  .pt-#{$size-value} { padding-top: $size; }
+  .pr-#{$size-value} { padding-right: $size; }
+  .pb-#{$size-value} { padding-bottom: $size; }
+  .pl-#{$size-value} { padding-left: $size; }
+  .px-#{$size-value} {padding-left: $size; padding-right: $size;}
+  .py-#{$size-value} {padding-top: $size; padding-bottom: $size;}
+}
+
+// Font-size
+@each $size in $font-sizes {
+  .font-#{str-slice(#{$size}, 1, -3)} {
+    font-size: $size;
+  }
+}
+
+//  Color and Background-color
+@each $name, $color in $colors {
+  .text-#{$name} { color: $color; }
+  .bg-#{$name} { background-color: $color; }
+}

@@ -18,10 +18,7 @@
   &-nav {
     @include flex-space-between;
     width: 100%;
-    padding: 10px 8px;
     max-width: 1024px;
-    margin: 0 auto;
-
     &-icon-link {
       text-decoration: none;
       @include flex-align-center;
@@ -32,18 +29,14 @@
 
       span {
         font-size: $font-size-small;
-        margin-left: 3px;
-        color: $grey-color;
+        margin-left: 6px;
       }
     }
 
     &-social-icons {
       @include flex-align-center;
-      gap: 4px;
-      font-size: 12px;
-
       i {
-        font-size: 16px;
+        font-size: 14px;
         margin-right: 10px;
         color: $grey-color;
       }
@@ -75,36 +68,25 @@
   &-main {
     @include flex-space-between;
     width: 100%;
-    padding: 30px 8px;
     max-width: 1024px;
-    margin: 0 auto;
 
     .logo {
       @include flex-align-center;
-      font-size: 30px;
       font-weight: 700;
       letter-spacing: 1px;
-      color: $slate-gray-color;
-
-      img {
-        margin-right: 7px;
-      }
     }
   }
 }
 
 .wishlist-btn {
-  padding: 5px 10px;
   border-radius: 3px;
   background-color: $slate-gray-color;
-  color: white;
   cursor: pointer;
 }
 /* header main  */
 .nav-hamburger-btn {
   @include flex-align-center;
   i {
-    font-size: 30px;
     display: none;
     cursor: pointer;
   }
@@ -135,11 +117,9 @@
   bottom: 0;
   width: 270px;
   max-width: 100%;
-  background-color: #fff;
   z-index: 200;
   display: flex;
   align-items: center;
-  padding-top: 40px;
   flex-direction: column;
   transform: translateX(-100%);
   transition: transform linear 0.2s;
@@ -150,10 +130,8 @@
 
   &__list {
     width: 100%;
-    margin-top: 24px;
     display: flex;
     flex-direction: column;
-    padding-left: 0;
   }
   &__link {
     text-decoration: none;
@@ -203,7 +181,6 @@
 }
 .shop-btn {
   border: 2px solid $slate-gray-color;
-  padding: 5px;
 }
 .img-england {
   width: 21px;
@@ -223,7 +200,5 @@
   right: -41px;
   background-color: $aqua-color;
   color: white;
-  font-size: 13px;
-  padding: 2px 16px;
   clip-path: polygon(32% 0%, 100% 0%, 100% 100%, 32% 100%, 0% 50%);
 }

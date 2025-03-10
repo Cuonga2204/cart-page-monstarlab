@@ -15,12 +15,12 @@
     <div class="cart">
         <header class="header">
             <div class="header-nav-wrapper">
-                <div class="header-nav">
+                <div class="header-nav px-8 py-10 mx-auto my-0">
                     <a class="header-nav-icon-link">
                         <i class="fa-solid fa-headphones"></i>
-                        <span>0335764028</span>
+                        <span class="text-grey">0335764028</span>
                     </a>
-                    <div class="header-nav-social-icons">
+                    <div class="header-nav-social-icons font-12">
                         <i class="fab fa-twitter"></i>
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-linkedin-in"></i>
@@ -40,38 +40,40 @@
                             <i class="fa fa-angle-right"></i><a href="#">Shipping Terms</a>
                         </li>
                     </ul>
-                    <button class="wishlist-btn">My Wishlist</button>
+                    <button class="wishlist-btn px-10 py-5 text-white">My Wishlist</button>
                 </div>
 
             </div>
 
-            <div class="header-main">
-                <label class="nav-hamburger-btn" for="nav-mobile-input">
+            <div class="header-main px-8 py-30 mx-auto my-0">
+                <label class="nav-hamburger-btn font-30" for="nav-mobile-input">
                     <i class="fa-solid fa-bars"></i>
                 </label>
                 <label for="nav-mobile-input"></label>
                 <input type="checkbox" id="nav-mobile-input" class="nav-input" hidden>
                 <label for="nav-mobile-input" class="nav-overlay"></label>
-                <nav class="nav-menu-mobile">
+                <nav class="nav-menu-mobile pt-40 bg-white">
                     <div class="nav-menu-mobile__header">
-                        <div class="logo">
-                            <img src="./assets/img/logo.png" />
+                        <div class="logo font-30">
+                            <img src="./assets/img/logo.png" class="mr-7 text-slate-gray" />
                             THEGEM
                         </div>
                         <label class="nav-menu-mobile__close-icon" for="nav-mobile-input">
                             <i class="fa-solid fa-xmark"></i>
                         </label>
                     </div>
-                    <ul class="nav-menu-mobile__list">
+                    <ul class="nav-menu-mobile__list mt-25px pl-0">
                         <li>
-                            <a href="#" class="nav-menu-mobile__link nav-menu-mobile__link--alt">HOME</a>
+                            <a href="#"
+                                class="nav-menu-mobile__link nav-menu-mobile__link--alt text-secondary fs-16 p-8">HOME</a>
                         </li>
 
                         <li>
-                            <a href="#" class="nav-menu-mobile__link">PAGES</a>
+                            <a href="#" class="nav-menu-mobile__link text-secondary fs-16 p-8">PAGES</a>
                         </li>
                         <li>
-                            <a href="#" class="nav-menu-mobile__link nav-menu-mobile__link--alt">BLOG</a>
+                            <a href="#"
+                                class="nav-menu-mobile__link nav-menu-mobile__link--alt text-secondary fs-16 p-8">BLOG</a>
                         </li>
                         <li>
                             <a href="#" class="nav-menu-mobile__link ">PORTFOLIOS</a>
@@ -88,7 +90,7 @@
                     </ul>
                 </nav>
 
-                <div class="logo">
+                <div class="logo font-30">
                     <img src="./assets/img/logo.png" />
                     THEGEM
                 </div>
@@ -97,7 +99,7 @@
                     <a href="#">PAGES</a>
                     <a href="#">BLOG</a>
                     <a href="#">PORTFOLIOS</a>
-                    <a href="#" class="shop-btn">SHOP</a>
+                    <a href="#" class="shop-btn p-6">SHOP</a>
                     <a href="#">FEATURES</a>
                     <a href="#">ELEMENTS</a>
                 </nav>
@@ -105,7 +107,7 @@
                     <img src="./assets/img/co-quoc-gia-anh.webp" alt="#" class="img-england" />
                     <i class="fa fa-search cart-icon--search"></i>
                     <i class="fa-solid fa-basket-shopping"></i>
-                    <span class="cart-badge">2</span>
+                    <span class="cart-badge font-12 py-2 px-16">2</span>
                 </div>
             </div>
 
@@ -133,8 +135,8 @@
 
         </header>
         <div class="cart-container">
-            <div class="cart-products-total">
-                You Have <span>6 Items</span> In Your Cart
+            <div class="cart-products-total font-20">
+                You Have <span class="color-aqua">6 Items</span> In Your Cart
             </div>
             <table class="cart-table">
                 <thead>
@@ -373,8 +375,8 @@
             </table>
             <div class="cart-table-footer">
                 <div class="coupon-container">
-                    <input class="coupon__input" type="text" placeholder="Enter coupon code here" />
-                    <button class="coupon__btn-apply">APPLY</button>
+                    <input class="coupon__input p-15 font-15" type="text" placeholder="Enter coupon code here" />
+                    <button class="coupon__btn-apply text-aqua bg-white">APPLY</button>
                 </div>
                 <div class="action-cart action-cart--pc">
                     <button class="button-update-cart">UPDATE CART</button>
@@ -393,25 +395,25 @@
             </div>
             <div class="cart-summary">
                 <div class="shipping-caculate">
-                    <div class="shipping-caculate__title">CALCULATE SHIPPING</div>
+                    <div class="shipping-caculate__title font-30">CALCULATE SHIPPING</div>
                     <form class="shipping-caculate__infor">
-                        <select class="dropdown-country" type="text">
+                        <select class="dropdown-country p-10" type="text">
                             <option value="" disabled selected>Select Your Country</option>
                             <option value="volvo">Ha Noi</option>
                             <option value="saab">HCM</option>
                             <option value="opel">Nghe An</option>
                         </select>
                         <div class="form-infor-shipping">
-                            <input class="input input-shipping" type="text" placeholder="State/Country" />
-                            <input class="input input-zip-code" type="text" placeholder="Post code/Zip" />
+                            <input class="input input-shipping p-10" type="text" placeholder="State/Country" />
+                            <input class="input input-zip-code p-10" type="text" placeholder="Post code/Zip" />
                         </div>
                         <div>
-                            <button class="btn-update-totals">UDPATE TOTALS</button>
+                            <button class="btn-update-totals font-16">UDPATE TOTALS</button>
                         </div>
                     </form>
                 </div>
                 <div class="cart-totals">
-                    <div class="cart-totals__title">CART TOTALS</div>
+                    <div class="cart-totals__title font-30">CART TOTALS</div>
                     <table class="cart-totals__table">
                         <tr>
                             <td class="cart-totals__table--grey">Subtotal</td>
@@ -436,7 +438,7 @@
             </div>
             <div class="products-interested">
                 <div class="products-interested__header">
-                    <div class="products-interested__title">
+                    <div class="products-interested__title font-34">
                         YOU MAYBE INTERESTED IN
                     </div>
                     <div class="horizontal-line"></div>
@@ -455,8 +457,8 @@
                             <div class="product-item__infor-name">Denim claysi Shorts</div>
                             <div class="product-item__infor-price">$35.00-$89.99</div>
                         </div>
-                        <div class="product-sale-circle">SALE</div>
-                        <div class="product-sale-circle product-sale-circle--new">
+                        <div class="product-sale-circle p-12">SALE</div>
+                        <div class="product-sale-circle product-sale-circle--new p-7">
                             NEW
                         </div>
                     </div>
@@ -617,9 +619,9 @@
                             <i class="fas fa-envelope form-icon"></i>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your message" class="form-input"></textarea>
+                            <textarea placeholder="Your message" class="form-input p-13"></textarea>
                         </div>
-                        <button class="form-submit">SEND MESSAGE</button>
+                        <button class="form-submit p-13">SEND MESSAGE</button>
                     </div>
                 </div>
                 <div class="footer-item footer-item-tablet">
@@ -692,12 +694,12 @@
                             all events coming straight in your mailbox:
                         </p>
                         <div class="newsletter-form">
-                            <input type="email" class="newsletter-input" placeholder="Your email address" />
+                            <input type="email" class="newsletter-input p-12" placeholder="Your email address" />
                             <button class="newsletter-btn">
                                 <i class="fa fa-angle-right"></i>
                             </button>
                         </div>
-                        <p class="newsletter-note">
+                        <p class="newsletter-note font-12">
                             * Personal information will be encrypted
                         </p>
                     </div>
@@ -705,7 +707,7 @@
             </div>
         </div>
         <div class="footer-bottom-wrapper">
-            <footer class="footer-bottom">
+            <footer class="footer-bottom p-5">
                 <div class="footer-bottom__copyright">
                     &copy; Copyright 2015 <a href="#" class="footer-link">CodexThemes</a>
                 </div>
@@ -726,7 +728,7 @@
                     <a href="#" class="footer-bottom__socical-icon"><i
                             class="fab fa-instagram footer-bottom__socical-icon--instagram"></i></a>
                     <a href="#" class="footer-bottom__socical-icon"><i
-                            class="fab fa-youtube footer-bottom__socical-icon--youtube"></i></a>
+                            class="fab fa-youtube footer-bottom__socical-icon--youtube color-red"></i></a>
                     <a href="#" class="footer-bottom__socical-icon"><i
                             class="fab fa-google-plus-g footer-bottom__socical-icon--google"></i></a>
                     <a href="#" class="footer-bottom__socical-icon"><i

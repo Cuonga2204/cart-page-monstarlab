@@ -58,7 +58,7 @@ input[type="radio"] {
       }
 
       i {
-        padding-bottom: 12px;
+        padding-bottom: 8px;
         color: $grey-dark-color;
       }
 
@@ -85,7 +85,6 @@ input[type="radio"] {
   margin-top: 60px;
 }
 .cart-products-total {
-  font-size: 20px;
   letter-spacing: 1px;
   color: $grey-color;
 
@@ -265,10 +264,8 @@ input[type="radio"] {
 }
 
 .coupon__input {
-  padding: 15px;
   border: 1px solid #dde2e3;
   background-color: $grey-light-color;
-  font-size: 15px;
   border-radius: 4px;
 
   &::placeholder {
@@ -283,8 +280,6 @@ input[type="radio"] {
 .coupon__btn-apply {
   @extend %btn-table-footer;
   border: 3px solid $aqua-color;
-  color: $aqua-color;
-  background-color: white;
   margin-left: 10px;
 
   &:hover {
@@ -328,7 +323,6 @@ input[type="radio"] {
   width: 50%;
 
   &__title {
-    font-size: 30px;
     color: $slate-gray-color;
     font-weight: 400;
     padding: 40px 0;
@@ -343,7 +337,6 @@ input[type="radio"] {
 .cart-totals {
   width: 50%;
   &__title {
-    font-size: 30px;
     color: $slate-gray-color;
     font-weight: 400;
     padding: 40px 0;
@@ -382,17 +375,14 @@ input[type="radio"] {
 }
 .input-shipping {
   width: 50%;
-  padding: 10px;
 }
 .input-zip-code {
   width: 50%;
-  padding: 10px;
 }
 .dropdown-country {
   border: 1px solid #d6dcda;
   border-radius: 3px;
   color: #6f7573;
-  padding: 10px;
 }
 
 .btn-update-totals {
@@ -403,7 +393,6 @@ input[type="radio"] {
   cursor: pointer;
   border-radius: 5px;
   transition: 0.3s;
-  font-size: 17px;
   padding: 10px 18px;
 
   &:hover {
@@ -421,7 +410,6 @@ input[type="radio"] {
     padding: 100px 0 40px 0;
   }
   &__title {
-    font-size: 34px;
     color: $slate-gray-color;
   }
 
@@ -473,7 +461,6 @@ input[type="radio"] {
 .product-sale-circle {
   @include flex-center;
   aspect-ratio: 1;
-  padding: 12px;
   position: absolute;
   border-radius: 50%;
   background-color: $aqua-color;
@@ -489,6 +476,5 @@ input[type="radio"] {
     right: -20px;
     background-color: $slate-gray-color;
     z-index: 1;
-    padding: 7px;
   }
 }
