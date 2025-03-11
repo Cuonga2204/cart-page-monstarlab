@@ -1,0 +1,98 @@
+@use "sass:math"; 
+
+// Hàm loại bỏ đơn vị px
+@function remove-unit($value) {
+  @return math.div($value, 1px);
+}
+
+@for $i from 0 through 100 {
+  .m-#{$i} {
+    margin: #{$i}px;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+  .mx-#{$i} {
+    margin-left: #{$i}px;
+    margin-right: #{$i}px;
+  }
+  .my-#{$i} {
+    margin-top: #{$i}px;
+    margin-bottom: #{$i}px;
+  }
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i}px;
+  }
+  .pr-#{$i} {
+    padding-right: #{$i}px;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+  .pl-#{$i} {
+    padding-left: #{$i}px;
+  }
+  .px-#{$i} {
+    padding-left: #{$i}px;
+    padding-right: #{$i}px;
+  }
+  .py-#{$i} {
+    padding-top: #{$i}px;
+    padding-bottom: #{$i}px;
+  }
+}
+
+@for $i from 10 through 50 {
+  .text-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+$colors: (
+  secondary: $grey-color,
+  text: $text-color,
+  accent: $slate-gray-color,
+  red: red,
+  white: $white-color,
+  primary: $primary-color,
+  text-input: $text-color-input,
+  footer-description: $text-footer-description,
+  slate-gray: $slate-gray-color,
+  btn-footer: $background-btn-footer-color,
+  aqua: $aqua-color,
+  grey: $grey-color,
+  grey-light: $grey-light-color,
+  grey-dark: $grey-dark-color,
+  grey-footer-grid: $grey-footer-grid-color,
+  border-table: $border-table-color,
+  header-nav: $background-header-nav-color,
+  input-bg: $background-input-color,
+  input-text: $intput-color,
+  border-input: $border-input,
+);
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
